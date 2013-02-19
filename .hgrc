@@ -1,6 +1,7 @@
 [ui]
 username=Cory Li <coryli@mit.edu>
 ssh = ssh -C -o ControlMaster=no -o ControlPersist=no
+ignore = ~/.hg_global_ignore
 
 [alias]
 addremove = addremove -s 90
