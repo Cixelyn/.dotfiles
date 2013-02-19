@@ -1,0 +1,33 @@
+[ui]
+username=Cory Li <coryli@mit.edu>
+ssh = ssh -C -o ControlMaster=no -o ControlPersist=no
+
+[alias]
+addremove = addremove -s 90
+
+[pager]
+pager = LESS='FSRX' less
+ignore = version, help, update, serve, record
+
+[progress]
+delay = 0
+
+[extdiff]
+cmd.kdiff3 =
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+
+[extensions]
+hgext.extdiff =
+color =
+churn =
+progress =
+fetch =
+graphlog =
+pager =
+mq =
+rebase =
+convert =
+purge =
+hggit = 
