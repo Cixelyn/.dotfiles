@@ -20,7 +20,7 @@ if __name__ == '__main__':
         if not args.dry:
           symlink(dfpath, lnpath)
         print dfpath, ' >> ', lnpath
-      elif args.action == 'clean':
+      elif args.action == 'clean' and isfile(lnpath):
         if not args.dry:
           unlink(lnpath)
         print '!!', lnpath
