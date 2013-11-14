@@ -16,7 +16,7 @@ if __name__ == '__main__':
     lnpath = expanduser(join('~', dfname))
     if isfile(dfpath) and dfname.startswith('.') and dfname.count('.') == 1:
 
-      if args.action == 'link':
+      if args.action == 'link' and not isfile(lnpath):
         if not args.dry:
           symlink(dfpath, lnpath)
         print dfpath, ' >> ', lnpath
