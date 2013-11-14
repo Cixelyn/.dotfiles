@@ -1,10 +1,8 @@
 [user]
 	name = Cory Li
 	email = coryli@mit.edu
-
 [color]
 	ui = true
-
 [alias]
   addremove = add -A
   co = checkout
@@ -12,3 +10,7 @@
   st = status
   unstage = reset HEAD --
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.git_global_ignore
