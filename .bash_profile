@@ -1,8 +1,9 @@
+# Source local files
 if [ -f ~/.bash_profile.local ]; then
   source ~/.bash_profile.local
 fi
 
-# COLOR DEFINITIONS
+# color definitions
 D=$'\e[37;40m'
 PINK=$'\e[35;40m'
 GREEN=$'\e[32;40m'
@@ -15,3 +16,6 @@ if hash vcprompt 2>/dev/null; then
 else
   export PS1='\[${PINK}\]\u\[${D}\]: \[${GREEN}\]\w\[${D}\] \$ '
 fi
+
+# set up z.sh
+. ~/.dotfiles/z.sh
