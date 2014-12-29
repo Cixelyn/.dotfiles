@@ -17,11 +17,11 @@ else
   export PS1='\[${PINK}\]\u\[${D}\]: \[${GREEN}\]\w\[${D}\] \$ '
 fi
 
+# set up pyenv + rbenv if they exist
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PYENV_ROOT=/usr/local/opt/pyenv
+
 # set up z.sh
 . ~/.dotfiles/z.sh
-
-# set up pyenv + rbenv if they exist
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PYENV_ROOT=/usr/local/opt/pyenv
-export RBENV_ROOT=/usr/local/var/rbenv
