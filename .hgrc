@@ -1,13 +1,13 @@
 [ui]
 username=Cory Li <coryli@mit.edu>
-ssh = ssh -C -o ControlMaster=no -o ControlPersist=no
 ignore = ~/.hgignore_global
+editor = vim
 
 [alias]
 addremove = addremove -s 90
 
 [pager]
-pager = LESS='FSRX' less
+pager = less
 ignore = version, help, update, serve, record
 
 [progress]
