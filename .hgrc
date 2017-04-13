@@ -5,6 +5,7 @@ editor = vim
 
 [alias]
 addremove = addremove -s 90
+defaultrepo = !echo "[paths]\ndefault = $1" >> ./.hg/hgrc
 
 [pager]
 pager = less
@@ -28,6 +29,7 @@ fetch =
 graphlog =
 pager =
 mq =
+shelve =
 rebase =
 convert =
 purge =
